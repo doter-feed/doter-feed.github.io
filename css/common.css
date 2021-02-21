@@ -236,11 +236,16 @@ body {
 	padding: 10px 10px;
 	font-size: 1em;
 }
+.text-bold {
+	font-weight: 500;
+}
 
 .bg-bluish {
 	background: #F9FBFF;
 }
-
+.bg-light-yellow {
+	background: #EEDCC8;
+}
 .bg-light-blue {
 	background: #e4f1fe;
 }
