@@ -1388,7 +1388,7 @@ a.create-sheet:hover {
 		padding: 0;
 	}
 	.navbar-brand img {
-		height: 30px;
+		height: 40px;
     	margin-top: 10px;
 	}
 
@@ -1414,6 +1414,13 @@ a.create-sheet:hover {
 }
 
 @media (max-width: 460px) {
+	.btn-main-home {
+		width: 100%;
+	}
+	.intro-img-abs {
+		position: relative;
+		top:0;
+	}
 	.mar-t-50 {
 		margin-top:30px;
 	}
@@ -1480,7 +1487,7 @@ a.create-sheet:hover {
 	}
 
 	.intro-message > h1, .top-content h1 {
-		font-size: 4em;
+		font-size: 3em;
 	}
 	.section-info .main-title {
 		font-size:1.65em;
@@ -1501,14 +1508,22 @@ a.create-sheet:hover {
 		padding:0 10px;
 	}
 	.section-title h2 {
-		font-size:2.5em;
+		font-size:2em;
+		line-height: 1.4em;
 		text-align: center;
 	}
 	.section-title h4 {
 		text-align: center;
 		width: 100%;
+		font-size: 1.1em;
 	}
-
+	.feature.pricing {
+		border-right: 0;
+	}
+	.pricing p.popular-tag {
+    	left: 20px;
+    	top: -20px;
+	}
 
 	ul.featured li {
 		margin: 20px 20px;
@@ -1521,10 +1536,10 @@ a.create-sheet:hover {
 		margin:0;
 	}
 	.mockup-main img {
-	    max-width: 150%;
+	    max-width: 100%;
 	}
 	.mockup-main img {
-	    margin-left: -25%;
+	    margin-left: 0;
 	}
 	.mockup-section-text-m {
 		margin-top: 20px;
