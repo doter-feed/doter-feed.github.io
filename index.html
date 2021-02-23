@@ -20,18 +20,18 @@
 	<nav class="navbar navbar-default navbar-inverse navbar-home header navbar-transparent topnav mobile" role="navigation">
 		<div class="container topnav">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				<!-- <button type="button" class="navbar-toggle" data-toggle="collapse"
 						data-target="#bs-example-navbar-collapse-1">
 					<a href="#"> Login </a>
-				</button>
-				<a class="navbar-brand topnav" href="/"> <img src="img/doter-logo-wh-1.png" class="logo img-responsive" alt="Little Stores"></a>
+				</button> -->
+				<a class="navbar-brand topnav" href="/"> <img src="img/doter-logo-wh-1.png" class="logo img-responsive" alt="Doter"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class=""><a class="page-scroll" href="#features">Features</a></li>
 					<li class=""><a class="page-scroll" href="#how-it-works"> How it works?</a></li>
 					<li class=""><a class="page-scroll" href="#pricing"> Pricing</a></li>
-					<li class="btn-h-login"><a class="page-scroll btn-head-login" href="#" > Login </a></li>
+					<!-- <li class="btn-h-login"><a class="page-scroll btn-head-login" href="#" > Login </a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -45,9 +45,14 @@
 				<div class="mar-t-30 no-padding">
 					<h3>Capture actionable insights from your customers with Net Promoter Score to proactively reduce churn and drive growth.</h3>
 					<div class="mar-t-30 no-padding">
-						<a class="btn btn-main btn-main-home" href="#"> Signup Now </a> 
-						<h4 class="sec-message"> No credit card required </h4>
-						<h4 class="sec-message"> FREE forever plan available </h4>
+						<form id="join-waitlist" method="post" action="https://api.formcake.com/api/form/898a1844-baef-4533-847d-206c8673f91e/submission">
+							<input type="email" placeholder="Email ID" name="email" id="email" class="input-form-email">
+							<button type="submit" class="btn btn-main btn-main-home btn-main-home-waitlist" id="btn-betalist"> Become Early Customer </button>
+							<h4 class="sec-message"> We won't spam you, Pinky Promise ❤️</h4>
+						</form>	
+						<div id="waitlist-thanks"> Thank you for the sharing your email. We will get back to you on 10th March 2021 once we open it for first 50 customers </div>
+						<!-- <h4 class="sec-message"> No credit card required </h4>
+						<h4 class="sec-message"> FREE forever plan available </h4> -->
 					</div>
 				</div>
 			</div>	
@@ -65,7 +70,7 @@
         	<h2> NPS is a new CX trend of 2021</h2>
         	<div class="col-md-8 col-md-offset-2 mar-t-20">
         		<p class="mar-b-20"> Our proven, end-to-end solution will guide you through each phase of a best-practice approach to Net Promoter, resulting in higher response rates, actionable customer feedback, predictive insights and maximum organic growth.</p>
-        		<a href="#" class="btn-basic mar-t-30">Still figuring, what is Net Promoter Score? &#8594;</a>
+        		<a href="#join-waitlist" class="btn-basic mar-t-30">Still figuring, what is Net Promoter Score? &#8594;</a>
         	</div>
         	<div class="col-md-10 col-md-offset-1 mar-t-20 main-section-img">
         		<img class="__img" src="img/main-section-3.png"> 
@@ -126,7 +131,7 @@
 		            <p class="mar-b-20">
 		               Create and publish the survey in just 2 mins. Use the dashboard to add follow-up questions based on user response.
 					</p>
-					<a href="#" class="btn-basic mar-t-30">Get Started for free &#8594; </a>
+					<a href="#join-waitlist" class="btn-basic mar-t-30">Be the early customer &#8594; </a>
 		            <div class="clearfix"></div>
 		        </div>  
 		        <div class="clearfix"></div>
@@ -142,7 +147,7 @@
 		            <p class="mar-b-20">
 		               Share the survey via Email, SMS or even your favourite tools via Intercom, Mailchimp, Zapier and 20 different tools.
 					</p>
-					<a href="#" class="btn-basic mar-t-30">Get Started for free &#8594; </a>
+					<a href="#join-waitlist" class="btn-basic mar-t-30">Be the early customer &#8594; </a>
 		            <div class="clearfix"></div>
 		        </div>  
 		        <div class="clearfix"></div>
@@ -159,7 +164,7 @@
 		               Doter dashboard is powerful enough to provide actionable feedback to you. Check the NPS trends over time and see how your overall product or service
 		               is performing.
 					</p>
-					<a href="#" class="btn-basic mar-t-30">Get Started for free &#8594; </a>
+					<a href="#join-waitlist" class="btn-basic mar-t-30">Be the early customer &#8594; </a>
 		            <div class="clearfix"></div>
 		        </div>  
 		        <div class="clearfix"></div>
@@ -248,7 +253,7 @@
                 	<li> 3 Surveys </li>
                 	<li> Email Support</li>
                 </ul>	
-                <a class="btn btn-main btn-main-home btn-pricing" href="#"> Signup Now </a> 
+                <a class="btn btn-main btn-main-home btn-pricing" href="#join-waitlist"> Signup Now </a> 
             </div>
         </div>
         <div class="col-md-4 mar-t-30">
@@ -263,7 +268,7 @@
                 	<li> Unlimited Surveys </li>
                 	<li> Chat Support</li>
                 </ul>
-                <a class="btn btn-main btn-main-home" href="#"> Signup Now </a> 
+                <a class="btn btn-main btn-main-home" href="#join-waitlist"> Signup Now </a> 
             </div>
         </div> 
         <div class="col-md-4 mar-t-30">
@@ -277,7 +282,7 @@
                 	<li> SDK for mobile app</li>
                 	<li> Account Manager</li>
                 </ul>
-                <a class="btn btn-main btn-main-home btn-pricing" href="#"> Let's Talk </a> 	
+                <a class="btn btn-main btn-main-home btn-pricing" href="#join-waitlist"> Let's Talk </a> 	
             </div>
         </div>
         <div class="clearfix"></div>
@@ -290,7 +295,7 @@
 	     <h2>Don't Miss the Trend, Start today</h2>
 	     <div class="mar-t-50">
 	     <a target="_blank" class="btn btn-main btn-main-home" href="#">
-			Signup Now
+			Be Early Customer
 		</a> 
 		</div>
 	</div>	
@@ -299,19 +304,19 @@
 	<div class="footer container">
 		<div class="col-md-3 text-center">
 			<h3><a href="#"> <img src="img/doter-logo-bl-bg.png" height="30px" alt="Doter Free NPS Survey Tool"></a></h3>
-			<h6 class="text-grey text-center"> © 2021 | </h6>
+			<h6 class="text-grey text-center"> © 2021 | All Rights Reserved </h6>
 
 		</div>
 		<div class="col-md-3 mar-t-20">
 			<ul class="footer-links">
-				<li><a href="#"> Blog </a></li>
-				<li><a href="#"> Sitemap </a></li>
+				<!-- <li><a href="#"> Blog </a></li>
+				<li><a href="#"> Sitemap </a></li> -->
 			</ul>
 		</div>
 		<div class="col-md-3 mar-t-20">
 			<ul class="footer-links">
-				<li><a href="/terms"> Terms & Conditions </a></li>
-				<li><a href="/terms"> Privacy & Policy </a></li>
+				<!-- <li><a href="/terms"> Terms & Conditions </a></li>
+				<li><a href="/terms"> Privacy & Policy </a></li> -->
 			</ul>
 		</div>
 		<div class="col-md-3 mar-t-20">
@@ -372,6 +377,8 @@ $('.navbar-collapse ul li a').click(function() {
 		});
 </script> -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B9RQHQQE8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

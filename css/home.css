@@ -39,7 +39,7 @@
 	font-family: 'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header .navbar-nav li a {
-	font-size: 1.15em;
+	font-size: 1em;
 	font-weight: 500;
 	font-family: 'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #3a3a3a;
@@ -180,6 +180,10 @@
 .main-section-img img {
 	max-width: 100%;
 }
+
+#waitlist-thanks {
+	font-family: 'Poppins';
+}
 /*.intro-message h1:after {
 	position: absolute;
 	top: -25px;
@@ -223,6 +227,11 @@
 .btn-main-home:hover, .btn-main-home:focus {
 	color: #FFFFFF;
 	background:#026ada;
+}
+.btn-main-home-waitlist{
+	position: absolute;
+    right: 15px;
+    padding: 13px 25px;
 }
 .btn-basic {
 	color: rgb(25, 108, 255);
@@ -595,22 +604,19 @@ a.btn-view-course {
     text-decoration: none;
 }
 
-/*== First Signup form ====*/
-.form-signup-header {
-	margin: 35px 0;
-}
 
-.form-signup-header .input-form-email {
-	background-color: #FFFFFF;
-	border-radius: 0;
-	border: none;
-	height: 44px;
-	padding: 10px 15px;
-	width: 350px;
-	font-weight: 600;
-	color: #237D8E;
-	font-size: 14px;
-	outline: 0;
+/*== First Signup form ====*/
+
+#join-waitlist .input-form-email {
+	border: 2px solid #0078fa;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 500;
+    color: #191616;
+    font-size: 1em;
+    outline: 0;
 }
 
 .btn-submit-email {
@@ -1416,6 +1422,8 @@ a.create-sheet:hover {
 @media (max-width: 460px) {
 	.btn-main-home {
 		width: 100%;
+		position: relative;
+    	right: 0;
 	}
 	.intro-img-abs {
 		position: relative;
