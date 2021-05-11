@@ -10,6 +10,9 @@
 .bg-dark-blue {
     background: #212d97;
 }
+.bg-head-green {
+	background-color: rgb(36 128 96);
+}
 .header {
 	min-height: 60px;
 	padding: 5px 0;
@@ -128,9 +131,15 @@
 .section-home-header {
 	position: relative;
 	padding-top:13em;
-	padding-bottom:6em;
-	background: url('../img/bg-lite.png') no-repeat;
+	padding-bottom:10em;
+	background: url('../img/bg-3.png') no-repeat;
 	background-position: bottom right;
+	background-color: #f0f0f0;
+}
+.section-home-header.center-align {
+	padding-bottom:0;
+	background: none;
+	background-color: #f0f0f0;
 }
 
 .intro-header {
@@ -156,6 +165,9 @@
 	font-weight: 600;
 	color:#222;
 	position: relative;
+}
+.intro-message > h1.lg-font {
+	font-size:3.5em;
 }
 .intro-message > h2 {
 	margin-bottom: 0.3em;
@@ -218,25 +230,27 @@
 
 .btn-main-home {
 	color: #FFFFFF;
-    background: #0078FA;
+    background: #1a7b5a;
     font-weight: 500;
     text-transform: uppercase;
-    box-shadow: 0px 6px 10px -4px rgba(77, 138, 240, 0.58);
+    box-shadow: 0px 6px 10px -4px rgb(26 123 90);
 }
 
 .btn-main-home:hover, .btn-main-home:focus {
 	color: #FFFFFF;
-	background:#026ada;
+	background:#0b613a;
 }
 .btn-main-home-waitlist{
 	position: absolute;
-    right: 15px;
-    padding: 13px 25px;
+    right:0;
+    padding: 20px 25px;
 }
 .btn-basic {
-	color: rgb(25, 108, 255);
+	color: rgb(62 62 62);
     font-weight: 500;
     font-size: 1.1em;
+    text-decoration: underline;
+    display: block;
 }
 .btn-sm-main {
 	padding:13px 40px;
@@ -263,15 +277,44 @@
 .intro-img-abs {
 	position: absolute;
 	right:0;
-	top:-70px;
+	top:-100px;
 }
 .intro-img-abs .__img{
-	max-width: 100%;
+	max-width: 120%;
 }
 .divider {
 	height:2px;
 	width: 
 }
+
+/*==== ifrome container ======*/
+.iframe-container {
+  width: 700px;
+  height: 480px;
+  background-image: url('http://www.hogshouse.com/codepenimg/iphone.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  position: relative;
+}
+
+.screen, iframe {
+  position: absolute;
+  width: 411px;
+  height: 700px;
+  top: 78px;
+  left: 250px;
+  background: #fff;
+  border: 2px #1D1F20 solid;
+  z-index: 500;
+  padding: 5px;
+}
+
+iframe {
+  top: 0;
+  left: 0;
+}
+
 /*==== Product Catetgories =====*/
 ul.product-categories {
     list-style: none;
@@ -348,9 +391,9 @@ ul.featured-sm li img {
     margin:0 auto;
 }
 .feature .__name {
-    font-size: 1.15em;
+    font-size: 1.25em;
     margin-top: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .feature p {
     margin: 10px 0 35px;
@@ -452,10 +495,13 @@ ul.featured-sm li img {
 }
 h3.group-title {
     font-family: 'Poppins', 'Helvetica', 'sans-serif';
-    text-transform: capitalize;
     font-size: 2em;
     position: relative;
     line-height: 1.6em;
+}
+h3.group-title.cs-testimonials {
+	font-size: 1.5em;
+	line-height: 1.8em;
 }
 /*h3.group-title::after {
     content: '';
@@ -468,11 +514,14 @@ h3.group-title {
 }*/
 .section-text p {
     color: #696969;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.6em;
 }
 .mockup {
 	margin:0 2.5em;
+}
+.mockup.no-margin {
+	margin:0 0.05em;
 }
 .mockup-large {
 	margin:0;
@@ -493,6 +542,15 @@ h3.group-title {
 .mockup-main img{
 	max-width: 100%;
     height: auto;
+    margin:1em auto;
+}
+ h3.sm-title {
+	font-family: 'Poppins', 'Helvetica', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 1.1em;
+    position: relative;
+    line-height: 1.6em;
+    margin-top:40px;
 }
 /*.mockup-main-left img {
 	margin-left:-25%;
@@ -608,9 +666,9 @@ a.btn-view-course {
 /*== First Signup form ====*/
 
 #join-waitlist .input-form-email {
-	border: 2px solid #0078fa;
+	border: 2px solid #1a7b5a;
     border-radius: 5px;
-    height: 50px;
+    height: 65px;
     padding: 10px 15px;
     width: 100%;
     font-weight: 500;
@@ -1340,6 +1398,9 @@ a.create-sheet:hover {
 	color: #424242;
 }
 
+.text-no-capt {
+	text-transform: lowercase;
+}
 /**---- Checkbox Design ----**/
 .onoffswitch {
     position: relative; width: 75px; margin-top:25px;
