@@ -6,8 +6,19 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://doter.co/</loc>
-  <lastmod>2021-03-05T19:32:27+00:00</lastmod>
+  <lastmod>2021-05-05T19:32:27+00:00</lastmod>
 </url>
-
+<url>
+  <loc>https://doter.co/nps-survey-tool</loc>
+  <lastmod>2021-05-05T19:32:27+00:00</lastmod>
+</url>
+<url>
+  <loc>https://doter.co/csat-feedback</loc>
+  <lastmod>2021-05-05T19:32:27+00:00</lastmod>
+</url>
+<url>
+  <loc>https://doter.co/compare-google-form-vs-doter</loc>
+  <lastmod>2021-05-05T19:32:27+00:00</lastmod>
+</url>
 
 </urlset>
